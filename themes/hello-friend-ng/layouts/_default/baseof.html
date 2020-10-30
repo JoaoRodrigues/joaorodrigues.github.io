@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language }}">
+    <head>
+        {{ partial "head.html" . }}
+    </head>
+
+    <body class="{{ if ne $.Site.Params.defaultTheme "light" -}} dark-theme {{- end -}}">
+        <script>
+            (function () {
+                const theme = window.localStorage && window.localStorage.getItem("theme");
+                const isDark = theme === "dark";
+                const metaThemeColor = document.querySelector("meta[name=theme-color]");
+
+                if (theme !== null) {
+                    document.body.classList.toggle("dark-theme", isDark);
+                    isDark
+                    ? metaThemeColor.setAttribute("content", "#252627")
+                    : metaThemeColor.setAttribute("content", "#fafafa");
+                }
+                })();
+        </script>
+        <div class="container">
+            {{ partial "header.html" . }}
+
+            <div class="content">
+                {{ block "main" . }}{{ end }}
+            </div>
+
+            {{ block "footer" . }}
+                {{ partial "footer.html" . }}
+            {{ end }}
+        </div>
+
+        {{ partial "javascript.html" . }}
+    </body>
+</html>
