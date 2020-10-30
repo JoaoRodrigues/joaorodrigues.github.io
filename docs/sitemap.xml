@@ -3,29 +3,29 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>localhost/education/</loc>
+    <loc>https://joaorodrigues.github.io/education/</loc>
     <lastmod>2020-10-30T14:39:52-07:00</lastmod>
   </url>
   
   <url>
-    <loc>localhost/about/</loc>
+    <loc>https://joaorodrigues.github.io/about/</loc>
     <lastmod>2020-10-30T14:06:52-07:00</lastmod>
   </url>
   
   <url>
-    <loc>localhost/categories/</loc>
+    <loc>https://joaorodrigues.github.io/categories/</loc>
   </url>
   
   <url>
-    <loc>localhost/</loc>
+    <loc>https://joaorodrigues.github.io/</loc>
   </url>
   
   <url>
-    <loc>localhost/series/</loc>
+    <loc>https://joaorodrigues.github.io/series/</loc>
   </url>
   
   <url>
-    <loc>localhost/tags/</loc>
+    <loc>https://joaorodrigues.github.io/tags/</loc>
   </url>
   
 </urlset>
