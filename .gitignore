@@ -1,0 +1,6 @@
+# Generated files by hugo
+/public/
+/resources/_gen/
+
+# Executable
+hugo.linux
