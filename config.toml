@@ -59,7 +59,7 @@ disableHugoGeneratorInject = false
   keywords = "Joao Rodrigues, Bioinformatics, Biopython, Structural Biology"
   images = [""]
 
-  homeSubtitle = ""
+  homeSubtitle = "Computational Structural Biology"
 
   # Prefix of link to the git commit detail page. GitInfo must be enabled.
   #
@@ -148,6 +148,16 @@ disableHugoGeneratorInject = false
     url        = "about/"
 
   [[menu.main]]
-    identifier = "education"
-    name       = "Education"
-    url        = "education/"
+    identifier = "code"
+    name       = "Code"
+    url        = "code/"
+
+  [[menu.main]]
+    identifier = "science"
+    name       = "Science"
+    url        = "science/"
+
+  [[menu.main]]
+    identifier = "teaching"
+    name       = "Teaching"
+    url        = "teaching/"

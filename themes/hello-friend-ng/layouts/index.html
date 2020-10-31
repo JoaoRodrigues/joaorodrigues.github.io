@@ -5,9 +5,9 @@
                <img src="{{ .Site.Params.Portrait.Path }}" class="circle" alt="{{ .Site.Params.Portrait.Alt }}" style="max-width:{{ .Site.Params.Portrait.MaxWidth }}" />
             {{ end }}
 
-            <h1>{{ .Site.Title }}</h1>
+            <h1 style="margin-bottom: 0;">{{ .Site.Title }}</h1>
             {{- with .Site.Params.homeSubtitle }}
-                <p>{{.}}</p>
+                <p style="margin-top: 0; margin-bottom: 2em;">{{.}}</p>
             {{- end }}
             {{- with .Site.Params.social }}
                 <div>

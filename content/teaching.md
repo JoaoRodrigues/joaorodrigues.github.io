@@ -1,5 +1,5 @@
 ---
-title: "Education"
+title: "Teaching"
 date: 2020-10-30T14:39:52-07:00
 draft: false
 ---
