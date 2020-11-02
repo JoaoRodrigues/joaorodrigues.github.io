@@ -18,22 +18,13 @@ Intermediate Python A 3-hour Python workshop that aims to familiarize participan
     </item>
     
     <item>
-      <title></title>
+      <title>About me</title>
       <link>/about/</link>
       <pubDate>Fri, 30 Oct 2020 14:06:52 -0700</pubDate>
       
       <guid>/about/</guid>
       <description>I am a computational biologist interested in the structure and dynamics of protein interactions. I studied biochemistry at the University of Coimbra (Portugal) and later earned my Ph.D. in the lab of Alexandre Bonvin, working on protein interactions and structural bioinformatics. I am currently a postdoctoral researcher at Stanford University with Michael Levitt.
 I am a highly collaborative scientist, having published more than 30 articles in peer-reviewed journals, which have received more than 2000 citations.</description>
-    </item>
-    
-    <item>
-      <title>Projects</title>
-      <link>/projects/</link>
-      <pubDate>Fri, 30 Oct 2020 14:06:52 -0700</pubDate>
-      
-      <guid>/projects/</guid>
-      <description></description>
     </item>
     
   </channel>
