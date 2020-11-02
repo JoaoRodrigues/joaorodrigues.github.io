@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>João Rodrigues</title>
-    <link>https://joaorodrigues.github.io/</link>
+    <link>/</link>
     <description>Recent content on João Rodrigues</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-sa/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-SA 4.0&lt;/a&gt;</copyright><atom:link href="https://joaorodrigues.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-sa/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-SA 4.0&lt;/a&gt;</copyright><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Science</title>
-      <link>https://joaorodrigues.github.io/science/</link>
+      <link>/science/</link>
       <pubDate>Sat, 31 Oct 2020 14:06:52 -0700</pubDate>
       
-      <guid>https://joaorodrigues.github.io/science/</guid>
+      <guid>/science/</guid>
       <description>I am a biochemist by training and a computational biologist by trade, interested in developing and applying computational methods to the study of protein structure, dynamics, and interactions. Throughout my career, I worked on a variety of biological systems ranging from ubiquitin to GPCRs, often in collaboration with experts from different fields. As a result, I managed to retain a firm grasp on biology and biochemistry, and got familiar with data from several different experimental techniques such as NMR, mass spectrometry, FRET, and cryo-EM.</description>
     </item>
     
     <item>
       <title>Teaching</title>
-      <link>https://joaorodrigues.github.io/teaching/</link>
+      <link>/teaching/</link>
       <pubDate>Fri, 30 Oct 2020 14:39:52 -0700</pubDate>
       
-      <guid>https://joaorodrigues.github.io/teaching/</guid>
+      <guid>/teaching/</guid>
       <description>This page lists assorted educational materials I developed over the years. They range from simple sheet cheats to in-depth tutorials on structural bioinformatics. Feedback on existing content and suggestions for other tutorials are welcome.
   Intermediate Python (Link) (Source)
 A 3-hour Python workshop that aims to familiarize participants with conventions and features of the language that are not necessarily covered in introductory courses, but that are nonetheless common in daily Python programming, by building a road trip planner.</description>
@@ -29,20 +29,20 @@ A 3-hour Python workshop that aims to familiarize participants with conventions 
     
     <item>
       <title>About me</title>
-      <link>https://joaorodrigues.github.io/about/</link>
+      <link>/about/</link>
       <pubDate>Fri, 30 Oct 2020 14:06:52 -0700</pubDate>
       
-      <guid>https://joaorodrigues.github.io/about/</guid>
+      <guid>/about/</guid>
       <description>I am a computational biologist interested in protein structure, dynamics, and interactions. I studied Biochemistry at the University of Coimbra, in Portugal, and later learned about structural biology and bioinformatics in the labs of Alexandre Bonvin in Utrecht and Michael Levitt at Stanford.
 My work has resulted in several peer-reviewed publications and some useful software packages for structural bioinformatics. In addition to research, I am enthusiastic about community-building and teaching, having helped organize multiple conferences and courses and being a certified Software Carpentry instructor.</description>
     </item>
     
     <item>
       <title>Code</title>
-      <link>https://joaorodrigues.github.io/code/</link>
+      <link>/code/</link>
       <pubDate>Fri, 30 Oct 2020 14:06:52 -0700</pubDate>
       
-      <guid>https://joaorodrigues.github.io/code/</guid>
+      <guid>/code/</guid>
       <description>As a computational biologist, I often write my own code to carry out my research, being most proficient in Python, JavaScript, and Bash. I am a strong supporter of open science and open-source software, and I pride myself in writing readable and reproducible code. As a result, nearly all of my contributions are available on my github page under permissive licenses.
 Over the years, I authored several open-source packages for bioinformatics that I am particularly proud of, such as pdb-tools and fcc.</description>
     </item>
