@@ -3,11 +3,6 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/science/</loc>
-    <lastmod>2020-10-31T14:06:52-07:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/teaching/</loc>
     <lastmod>2020-10-30T14:39:52-07:00</lastmod>
   </url>
@@ -18,7 +13,7 @@
   </url>
   
   <url>
-    <loc>/code/</loc>
+    <loc>/projects/</loc>
     <lastmod>2020-10-30T14:06:52-07:00</lastmod>
   </url>
   
