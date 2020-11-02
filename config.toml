@@ -56,10 +56,10 @@ disableHugoGeneratorInject = false
   # Metadata mostly used in document's head
   # 
   description = "Personal web page of Joao Rodrigues"
-  keywords = "Joao Rodrigues, Bioinformatics, Biopython, Structural Biology"
+  keywords = "Joao Rodrigues, Computational Biology, Structural Biology, Bioinformatics, Protein, Protein Docking, HADDOCK, pdb-tools, Biopython, Coimbra, Stanford, Utrecht"
   images = [""]
 
-  homeSubtitle = "Computational Structural Biology"
+  homeSubtitle = "Structural Biology // Scientific Software Development"
 
   # Prefix of link to the git commit detail page. GitInfo must be enabled.
   #
@@ -147,17 +147,7 @@ disableHugoGeneratorInject = false
     name       = "About"
     url        = "about/"
 
-  [[menu.main]]
-    identifier = "code"
-    name       = "Code"
-    url        = "code/"
-
-  [[menu.main]]
-    identifier = "science"
-    name       = "Science"
-    url        = "science/"
-
-  [[menu.main]]
-    identifier = "teaching"
-    name       = "Teaching"
-    url        = "teaching/"
+#  [[menu.main]]
+#    identifier = "projects"
+#    name       = "Projects"
+#    url        = "projects/"
