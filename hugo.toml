@@ -235,6 +235,10 @@ disableHugoGeneratorInject = false
     name = "scholar"
     url  = "https://scholar.google.com/citations?user=UeXRdzQAAAAJ&sortby=pubdate"
 
+  [[params.social]]
+    name = "cv"
+    url  = "/JR_CV_2024_06.pdf"
+
 [languages]
   [languages.en]
     weight    = 1
