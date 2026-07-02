@@ -237,7 +237,7 @@ disableHugoGeneratorInject = false
 
   [[params.social]]
     name = "cv"
-    url  = "/JR_CV_032026.pdf"
+    url  = "/JR_CV.pdf"
 
 [languages]
   [languages.en]
