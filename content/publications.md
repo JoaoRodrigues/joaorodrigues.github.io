@@ -1,5 +1,7 @@
 ---
-type: redirect
-target: https://scholar.google.com/citations?user=UeXRdzQAAAAJ
+title: "Publications"
+relative: false
+linkFullImages: false
 ---
 
+{{< publications >}}

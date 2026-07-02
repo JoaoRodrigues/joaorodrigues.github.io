@@ -59,8 +59,8 @@ disableHugoGeneratorInject = false
 
   # Home subtitles of the index page.
   #
-  occupation = "Computational Structural Biologist"
-  currentPosition = "Principal Scientist at Schrodinger"
+  occupation = "Computational Biologist"
+  currentPosition = "Senior Principal Scientist at Schrodinger"
 
   # Set a background for the homepage
   # backgroundImage = "assets/images/background.jpg"
@@ -215,9 +215,9 @@ disableHugoGeneratorInject = false
   # Addon: Social icons
   # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
   #
-  [[params.social]]
-    name = "twitter"
-    url  = "https://twitter.com/jpglmrodrigues"
+  #[[params.social]]
+  #  name = "twitter"
+  #  url  = "https://twitter.com/jpglmrodrigues"
 
   [[params.social]]
     name = "email"
@@ -237,17 +237,22 @@ disableHugoGeneratorInject = false
 
   [[params.social]]
     name = "cv"
-    url  = "/JR_CV_2024_06.pdf"
+    url  = "/JR_CV_032026.pdf"
 
 [languages]
   [languages.en]
     weight    = 1
     copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
   [languages.en.params]
-    subtitle  = "Computational Structural Biologist"
+    subtitle  = "Computational Biologist"
 
 [menu]
   [[menu.main]]
     identifier = "bio"
     name       = "Bio"
     url        = "bio/"
+
+  [[menu.main]]
+    identifier = "publications"
+    name       = "Publications"
+    url        = "publications/"

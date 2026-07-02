@@ -108,6 +108,37 @@
   }
 }
 
+details.year-details {
+  margin-bottom: 0.6em;
+
+  summary {
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0.3em 0;
+    user-select: none;
+    list-style: none;
+
+    &::before {
+      content: '▶ ';
+      font-size: 0.7em;
+      opacity: 0.6;
+    }
+  }
+
+  &[open] summary::before {
+    content: '▼ ';
+  }
+
+  .year-pubs {
+    padding-top: 0.8em;
+
+    p {
+      margin-bottom: 1.2em;
+    }
+  }
+}
+
 .pagination {
   margin-top: 20px;
 
