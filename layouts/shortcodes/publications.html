@@ -1,4 +1,26 @@
+<style>
+.year-pubs {
+  font-size: 0.875rem;
+  line-height: 1.55;
+}
+.pub-entry {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+.pub-number {
+  color: #999;
+  min-width: 2rem;
+  text-align: right;
+  flex-shrink: 0;
+}
+.pub-entry strong {
+  font-weight: 500;
+}
+</style>
+
 {{ $pubs := .Site.Data.publications }}
+{{ $total := len $pubs }}
 
 {{/* Collect unique years in the order they appear (already reverse-chrono from Scholar) */}}
 {{ $years := slice }}
@@ -9,17 +31,23 @@
   {{ end }}
 {{ end }}
 
+{{ $.Scratch.Set "counter" $total }}
+
 {{ range $i, $year := $years }}
 <details class="year-details"{{ if eq $i 0 }} open{{ end }}>
   <summary>{{ $year }}</summary>
   <div class="year-pubs">
     {{ range $pubs }}
       {{ if eq (string .year) $year }}
-      <p>
-        <a href="{{ if .url }}{{ .url }}{{ else }}{{ .scholar_url }}{{ end }}"><strong>{{ .title }}</strong></a><br>
-        {{ .authors }}<br>
-        <em>{{ .venue }}</em>
-      </p>
+      <div class="pub-entry">
+        <span class="pub-number">{{ $.Scratch.Get "counter" }}.</span>
+        <div>
+          <a href="{{ if .url }}{{ .url }}{{ else }}{{ .scholar_url }}{{ end }}"><strong>{{ .title }}</strong></a><br>
+          {{ .authors }}<br>
+          <em>{{ .venue }}</em>
+        </div>
+      </div>
+      {{ $.Scratch.Set "counter" (sub ($.Scratch.Get "counter") 1) }}
       {{ end }}
     {{ end }}
   </div>

@@ -1,0 +1,9 @@
+<nav class="menu">
+    <ul class="menu__inner">
+        {{- $currentPage := . -}}
+        {{ range .Site.Menus.main -}}
+            {{- $active := eq $currentPage.RelPermalink (.URL | relLangURL) -}}
+            <li><a href="{{ .URL | relLangURL }}"{{ if $active }} class="active"{{ end }}>{{ .Name }}</a></li>
+        {{- end }}
+    </ul>
+</nav>

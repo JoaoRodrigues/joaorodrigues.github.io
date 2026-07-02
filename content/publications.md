@@ -1,5 +1,5 @@
 ---
-title: "Publications"
+title: ""
 relative: false
 linkFullImages: false
 ---

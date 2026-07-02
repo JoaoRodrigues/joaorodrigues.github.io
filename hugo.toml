@@ -10,7 +10,7 @@ paginate  = 10
 rssLimit  = 10  # Maximum number of items in the RSS feed.
 copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License." # This message is only used by the RSS template.
 
-googleAnalytics = "G-4PWK5HH5DJ"
+# googleAnalytics = ""
 # disqusShortname = ""
 
 archetypeDir = "archetypes"
@@ -54,13 +54,13 @@ disableHugoGeneratorInject = false
   # Metadata mostly used in document's head
   # 
   description = "Personal website of João Rodrigues"
-  keywords = "computational biology, structural biology, bioinformatics, python, protein"
+  keywords = "computational biology, structural biology, bioinformatics, python, protein, schrodinger"
   images = [""]
 
   # Home subtitles of the index page.
   #
-  occupation = "Computational Biologist"
-  currentPosition = "Senior Principal Scientist at Schrodinger"
+  occupation = "Computational Structural Biologist"
+  currentPosition = "Team Lead at Schrodinger"
 
   # Set a background for the homepage
   # backgroundImage = "assets/images/background.jpg"
@@ -79,7 +79,7 @@ disableHugoGeneratorInject = false
   # Per default, this option is off. 
   # The theme is respecting the prefers-color-scheme of the operating system. 
   # With this option on, the page user is able to set the scheme he wants. 
-  enableThemeToggle = false
+  enableThemeToggle = true
 
   # Sharing buttons
   #
@@ -116,7 +116,7 @@ disableHugoGeneratorInject = false
   # If you want, you can easily override the default footer with your own content. 
   #
   [params.footer]
-    trademark = 2024
+    trademark = 2026
     # rss = true
     copyright = true
     # author = true
@@ -244,13 +244,13 @@ disableHugoGeneratorInject = false
     weight    = 1
     copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
   [languages.en.params]
-    subtitle  = "Computational Biologist"
+    subtitle  = "Computational Structural Biologist"
 
 [menu]
   [[menu.main]]
-    identifier = "bio"
-    name       = "Bio"
-    url        = "bio/"
+    identifier = "about"
+    name       = "About"
+    url        = "about/"
 
   [[menu.main]]
     identifier = "publications"

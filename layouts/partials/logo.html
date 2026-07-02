@@ -1,0 +1,7 @@
+{{ if not .IsHome }}
+<a href="{{ .Site.BaseURL | relLangURL }}" style="text-decoration: none; display: flex; align-items: center;">
+    <div class="logo">
+        <span class="logo__text" style="font-weight: normal; font-size: 0.875rem;"><em>$&thinsp;cd ..</em></span>
+    </div>
+</a>
+{{ end }}
