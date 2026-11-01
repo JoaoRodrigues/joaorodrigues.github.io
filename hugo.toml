@@ -1,6 +1,6 @@
 baseURL = ""
 title   = "JR"
-languageCode = "en-us"
+locale = "en-us"
 theme = "hello-friend-ng"
 
 PygmentsCodeFences = true

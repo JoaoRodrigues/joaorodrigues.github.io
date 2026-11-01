@@ -19,7 +19,7 @@
 }
 </style>
 
-{{ $pubs := .Site.Data.publications }}
+{{ $pubs := hugo.Data.publications }}
 {{ $total := len $pubs }}
 
 {{/* Collect unique years in the order they appear (already reverse-chrono from Scholar) */}}
