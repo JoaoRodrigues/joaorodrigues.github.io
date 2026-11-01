@@ -1,8 +1,24 @@
 [
   {
+    "title": "Structural Plasticity and Ligand Promiscuity of CYP3A4 Revealed by Cryo-EM.",
+    "authors": "AK Orta, JH Schäfer, GJ Correy, JO Norman, J Pampel, KK Huddleston, ...",
+    "venue": "Biorxiv: the Preprint Server for Biology, 2026",
+    "year": 2026,
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=UeXRdzQAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=UeXRdzQAAAAJ:BqipwSGYUEgC",
+    "url": "https://europepmc.org/article/med/42818036"
+  },
+  {
+    "title": "On the generalization and usability of cofolding models for GPCR drug discovery",
+    "authors": "L Zhang, RA Friesner, EB Miller, JP GLM Rodrigues",
+    "venue": "npj Drug Discovery 3 (1), 30, 2026",
+    "year": 2026,
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=UeXRdzQAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=UeXRdzQAAAAJ:YFjsv_pBGBYC",
+    "url": "https://www.nature.com/articles/s44386-026-00066-1"
+  },
+  {
     "title": "Towards better structural models from cryo‐electron microscopy data with physics‐based methods",
     "authors": "H Boyaci Selcuk, G Reggiano, J Robson‐Tull, L Zhang, ...",
-    "venue": "FEBS letters, 2026",
+    "venue": "FEBS letters 600 (10), 1549-1557, 2026",
     "year": 2026,
     "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=UeXRdzQAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=UeXRdzQAAAAJ:JV2RwH3_ST0C",
     "url": "https://febs.onlinelibrary.wiley.com/doi/abs/10.1002/1873-3468.70165"
@@ -14,14 +30,6 @@
     "year": 2026,
     "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=UeXRdzQAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=UeXRdzQAAAAJ:blknAaTinKkC",
     "url": "https://pubs.acs.org/doi/abs/10.1021/acs.jmedchem.5c03392"
-  },
-  {
-    "title": "Generalization and Usability of Co-Folded GPCR–Ligand Complexes: A Physics-Guided Assessment",
-    "authors": "L Zhang, RA Friesner, EB Miller, JP Rodrigues",
-    "venue": "ChemRxiv 2026 (0107), 2026",
-    "year": 2026,
-    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=UeXRdzQAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=UeXRdzQAAAAJ:hMod-77fHWUC",
-    "url": "https://chemrxiv.org/doi/10.26434/chemrxiv-2026-1rkqz"
   },
   {
     "title": "The HADDOCK2. 4 web server for integrative modeling of biomolecular complexes",
@@ -42,21 +50,21 @@
   {
     "title": "OpenMM 8: molecular dynamics simulation with machine learning potentials",
     "authors": "P Eastman, R Galvelis, RP Peláez, CRA Abreu, SE Farr, E Gallicchio, ...",
-    "venue": "The Journal of Physical Chemistry B 128 (1), 109-116, 2023",
-    "year": 2023,
+    "venue": "The Journal of Physical Chemistry B 128 (1), 109-116, 2024",
+    "year": 2024,
     "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=UeXRdzQAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=UeXRdzQAAAAJ:bEWYMUwI8FkC",
-    "url": "https://pubs.acs.org/doi/abs/10.1021/acs.jpcb.3c06662"
+    "url": "https://pubs.acs.org/jpcbfk/article/128/1/109/1486917"
   },
   {
     "title": "Using AlphaFold and experimental structures for the prediction of the structure and binding affinities of GPCR complexes via induced fit docking and free energy perturbation",
     "authors": "D Coskun, M Lihan, JP Rodrigues, M Vass, D Robinson, RA Friesner, ...",
-    "venue": "Journal of Chemical Theory and Computation 20 (1), 477-489, 2023",
-    "year": 2023,
+    "venue": "Journal of Chemical Theory and Computation 20 (1), 477-489, 2024",
+    "year": 2024,
     "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=UeXRdzQAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=UeXRdzQAAAAJ:iH-uZ7U-co4C",
-    "url": "https://pubs.acs.org/doi/abs/10.1021/acs.jctc.3c00839"
+    "url": "https://pubs.acs.org/jctcce/article-abstract/20/1/477/1513058"
   },
   {
-    "title": "An electrostatically-steered conformational selection mechanism promotes SARS-CoV-2 Spike protein variation",
+    "title": "An electrostatically-steered conformational selection mechanism promotes sars-cov-2 spike protein variation",
     "authors": "M Sorokina, J Belapure, C Tüting, R Paschke, I Papasotiriou, ...",
     "venue": "Journal of molecular biology 434 (13), 167637, 2022",
     "year": 2022,
@@ -86,14 +94,6 @@
     "year": 2021,
     "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=UeXRdzQAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=UeXRdzQAAAAJ:hFOr9nPyWt4C",
     "url": "https://onlinelibrary.wiley.com/doi/abs/10.1002/prot.26018"
-  },
-  {
-    "title": "Predicting the Specificity-Determining Positions of Paralogous Complexes",
-    "authors": "T Karakulak, AS Rifaioglu, JP Rodrigues, E Karaca",
-    "venue": "bioRxiv, 2021.01. 26.428202, 2021",
-    "year": 2021,
-    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=UeXRdzQAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=UeXRdzQAAAAJ:HDshCWvjkbEC",
-    "url": "https://www.biorxiv.org/content/10.1101/2021.01.26.428202.abstract"
   },
   {
     "title": "Insights on cross-species transmission of SARS-CoV-2 from structural modeling",
@@ -133,15 +133,15 @@
     "venue": "Journal of chemical theory and computation 15 (11), 6358-6367, 2019",
     "year": 2019,
     "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=UeXRdzQAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=UeXRdzQAAAAJ:L8Ckcad2t8MC",
-    "url": "https://pubs.acs.org/doi/abs/10.1021/acs.jctc.9b00310"
+    "url": "https://pubs.acs.org/jctcce/article-abstract/15/11/6358/606258"
   },
   {
-    "title": "JoaoRodrigues/interfacea: First beta version of the API",
+    "title": "JoaoRodrigues/interfacea: First beta version of the API.",
     "authors": "J Rodrigues, C Valentine, B Jimenez",
-    "venue": "Zenodo https://doi. org/10.5281/zenodo 3516439, 2019",
+    "venue": "Zenodo, 2019",
     "year": 2019,
     "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=UeXRdzQAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=UeXRdzQAAAAJ:NMxIlDl6LWMC",
-    "url": "https://scholar.google.com/scholar?cluster=8627868412372814107&hl=en&oi=scholarr"
+    "url": "https://ui.adsabs.harvard.edu/abs/2019zndo...3516439R/abstract"
   },
   {
     "title": "pdb-tools: A swiss army knife for molecular structures",
@@ -168,12 +168,12 @@
     "url": "https://www.pnas.org/doi/abs/10.1073/pnas.1807981115"
   },
   {
-    "title": "Defining distance restraints in HADDOCK",
+    "title": "Defining distance restraints in HADDOCK.",
     "authors": "AMJJ Bonvin, E Karaca, PL Kastritis, JP Rodrigues",
-    "venue": "Nature protocols 13 (7), 1503-1503, 2018",
+    "venue": "Nature protocols 13 (7), 1503-1504, 2018",
     "year": 2018,
     "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=UeXRdzQAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=UeXRdzQAAAAJ:R3hNpaxXUhUC",
-    "url": "https://www.nature.com/articles/s41596-018-0017-6"
+    "url": "https://go.gale.com/ps/i.do?id=GALE%7CA572693707&sid=googleScholar&v=2.1&it=r&linkaccess=abs&issn=17542189&p=HRCA&sw=w"
   },
   {
     "title": "The solution structure of monomeric CCL 5 in complex with a doubly sulfated N‐terminal segment of CCR 5",
@@ -237,7 +237,7 @@
     "venue": "Cell 169 (3), 407-421. e16, 2017",
     "year": 2017,
     "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=UeXRdzQAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=UeXRdzQAAAAJ:KlAtU1dfN6UC",
-    "url": "https://www.cell.com/cell/fulltext/S0092-8674(17)30376-8?campaign_url=https%3A%2F%2Fsidneykimmelcancercenter.jeffersonhealth.org%2F%3Farticle%3D2018-jeff-benovic-phd-receives-discovery-of-the-year-award-for-basic-science&ga_cid=1648064375.1647475200"
+    "url": "https://www.cell.com/cell/fulltext/S0092-8674(17)30376-8"
   },
   {
     "title": "Sense and simplicity in HADDOCK scoring: Lessons from CASP‐CAPRI round 1",
@@ -309,7 +309,7 @@
     "venue": "Biochemistry 53 (42), 6706-6716, 2014",
     "year": 2014,
     "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=UeXRdzQAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=UeXRdzQAAAAJ:eQOLeE2rZwMC",
-    "url": "https://pubs.acs.org/doi/abs/10.1021/bi500909d"
+    "url": "https://pubs.acs.org/bichaw/article-pdf/53/42/6706/15694292/bi500909d.pdf"
   },
   {
     "title": "Sequence co-evolution gives 3D contacts and structures of protein complexes",
@@ -344,12 +344,12 @@
     "url": "https://febs.onlinelibrary.wiley.com/doi/abs/10.1111/febs.12771"
   },
   {
-    "title": "HADDOCK2P2I: A Biophysical Model for Predicting the Binding Affinity of Protein–Protein Interaction Inhibitors",
+    "title": "HADDOCK2P2I: a biophysical model for predicting the binding affinity of protein–protein interaction inhibitors",
     "authors": "PL Kastritis, JP Rodrigues, AMJJ Bonvin",
-    "venue": "Journal of Chemical Information and Modeling 54 (3), 826-836, 2014",
+    "venue": "Journal of Chemical Information and Modeling 54 (3), 826, 2014",
     "year": 2014,
     "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=UeXRdzQAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=UeXRdzQAAAAJ:zYLM7Y9cAGgC",
-    "url": "https://pubs.acs.org/doi/abs/10.1021/ci4005332"
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3966529/"
   },
   {
     "title": "Defining the limits of homology modeling in information‐driven protein docking",

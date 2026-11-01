@@ -221,7 +221,7 @@ disableHugoGeneratorInject = false
 
   [[params.social]]
     name = "email"
-    url  = "mailto:j.p.g.l.m.rodrigues@gmail.com"
+    url  = "mailto:me@joaor.eu"
 
   [[params.social]]
     name = "github"
@@ -245,14 +245,3 @@ disableHugoGeneratorInject = false
     copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
   [languages.en.params]
     subtitle  = "Computational Structural Biologist"
-
-[menu]
-  [[menu.main]]
-    identifier = "about"
-    name       = "About"
-    url        = "about/"
-
-  [[menu.main]]
-    identifier = "publications"
-    name       = "Publications"
-    url        = "publications/"

@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Biopython",
+    "repo": "biopython/biopython",
+    "role": "Core developer",
+    "description": "Python tools for computational molecular biology.",
+    "stars": 5252
+  },
+  {
+    "name": "OpenMM",
+    "repo": "openmm/openmm",
+    "role": "Contributor",
+    "description": "Toolkit for molecular simulation using high performance GPU code.",
+    "stars": 2023
+  },
+  {
+    "name": "pdb-tools",
+    "repo": "haddocking/pdb-tools",
+    "role": "Creator",
+    "description": "Dependency-free, cross-platform swiss army knife for PDB files.",
+    "stars": 461
+  },
+  {
+    "name": "FCC",
+    "repo": "haddocking/fcc",
+    "role": "Creator",
+    "description": "Fraction of Common Contacts clustering algorithm for protein structures.",
+    "stars": 28
+  }
+]

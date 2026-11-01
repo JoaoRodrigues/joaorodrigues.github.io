@@ -1,0 +1,9 @@
+{{ range hugo.Data.education }}
+<div class="edu-entry">
+  <div>
+    {{ .degree }}<br>
+    <span class="edu-institution">{{ .institution }}</span>
+  </div>
+  <span class="edu-years">{{ .years }}</span>
+</div>
+{{ end }}

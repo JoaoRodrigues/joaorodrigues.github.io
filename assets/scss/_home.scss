@@ -1,0 +1,167 @@
+// Single-page home
+
+// Tokens. Each color is defined once with light-dark(); color-scheme follows
+// the OS and is overridden by the theme toggle's data-theme attribute.
+:root {
+  color-scheme: light dark;
+
+  --content: 760px;
+  --gutter: 20px;
+
+  --muted: light-dark(oklch(0.5 0 none), oklch(0.68 0 none));
+  --star: light-dark(oklch(0.7 0.15 85), oklch(0.82 0.15 85));
+  --border: color-mix(in oklch, currentColor 35%, transparent);
+}
+
+[data-theme=light] {
+  color-scheme: light;
+}
+
+[data-theme=dark] {
+  color-scheme: dark;
+}
+
+// Header and content share one width so their edges line up
+.header__inner {
+  width: var(--content);
+}
+
+.footer {
+  color: var(--muted);
+}
+
+.footer__inner {
+  width: var(--content);
+}
+
+.footer__content {
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+.header__social {
+  display: flex;
+  align-items: center;
+  margin-inline-end: 0.5rem;
+}
+
+// One centered column, start-aligned text
+main.home {
+  width: min(100% - 2 * var(--gutter), var(--content));
+  margin-inline: auto;
+  padding: 0;
+  font-size: 0.875rem;
+
+  > section {
+    text-align: start;
+  }
+
+  h2 {
+    font-size: 1.125rem;
+  }
+}
+
+// Education
+.edu-entry {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-block-end: 0.75rem;
+}
+
+.edu-years,
+.edu-institution {
+  color: var(--muted);
+}
+
+.edu-years {
+  white-space: nowrap;
+}
+
+// Open-source software
+.pkg-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr));
+  gap: 1rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.pkg-card {
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0.75rem 1rem;
+}
+
+.pkg-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.5rem;
+
+  strong {
+    font-weight: 500;
+  }
+}
+
+.pkg-stars {
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+.pkg-star {
+  color: var(--star);
+}
+
+.pkg-role {
+  --badge: oklch(0.6 0 none);
+
+  display: inline-block;
+  margin-block: 0.25rem;
+  padding-inline: 0.6rem;
+  border: 1px solid color-mix(in oklch, var(--badge) 60%, transparent);
+  border-radius: 999px;
+  background: color-mix(in oklch, var(--badge) 15%, transparent);
+  font-size: 0.75rem;
+  line-height: 1.6;
+}
+
+.pkg-role--creator {
+  --badge: oklch(0.65 0.18 300);
+}
+
+.pkg-role--core-developer {
+  --badge: oklch(0.65 0.15 250);
+}
+
+// Publications
+.pub-stats {
+  margin-block: -0.5rem 1rem;
+  font-size: 0.8125rem;
+}
+
+.year-details summary {
+  font-size: 0.9375rem;
+}
+
+.year-pubs {
+  font-size: 0.8125rem;
+  line-height: 1.55;
+}
+
+.pub-entry {
+  display: flex;
+  gap: 0.75rem;
+  margin-block-end: 1.25rem;
+
+  strong {
+    font-weight: 500;
+  }
+}
+
+.pub-number {
+  color: var(--muted);
+  min-inline-size: 2rem;
+  text-align: end;
+  flex-shrink: 0;
+}

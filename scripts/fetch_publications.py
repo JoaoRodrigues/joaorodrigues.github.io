@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
 """
 Scrape publications from Google Scholar and write to data/publications.json.
+Also writes the profile's citation count and h-index to data/scholar.json.
 
 Run from the site root:
-    python3 scripts/fetch_publications.py
+    python3 scripts/fetch_publications.py               # publications + stats
+    python3 scripts/fetch_publications.py --stats-only  # only citations/h-index
 """
 
 import urllib.request
@@ -15,6 +17,7 @@ import json
 import os
 import sys
 import time
+from datetime import date
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 SCHOLAR_URL = (
@@ -24,6 +27,10 @@ SCHOLAR_URL = (
 SCHOLAR_BASE = "https://scholar.google.com"
 OUTPUT = os.path.normpath(
     os.path.join(os.path.dirname(__file__), "..", "data", "publications.json")
+)
+
+STATS_OUTPUT = os.path.normpath(
+    os.path.join(os.path.dirname(__file__), "..", "data", "scholar.json")
 )
 
 HEADERS = {
@@ -82,6 +89,30 @@ def parse_profile(page: str) -> list[dict]:
     return publications
 
 
+def parse_stats(page: str) -> dict:
+    """Return total citations and h-index ("All" column) from the profile page."""
+    # Table cells come in pairs (All, Since YYYY): citations, h-index, i10-index.
+    cells = re.findall(r'<td class="gsc_rsb_std">(\d+)</td>', page)
+    if len(cells) < 4:
+        return {}
+    return {
+        "citations": int(cells[0]),
+        "h_index": int(cells[2]),
+        "updated": date.today().isoformat(),
+    }
+
+
+def write_stats(page: str) -> None:
+    stats = parse_stats(page)
+    if not stats:
+        print("WARNING: could not parse citation stats; leaving file untouched.", file=sys.stderr)
+        return
+    with open(STATS_OUTPUT, "w", encoding="utf-8") as f:
+        json.dump(stats, f, indent=2)
+        f.write("\n")
+    print(f"Stats: {stats['citations']} citations, h-index {stats['h_index']} → {STATS_OUTPUT}")
+
+
 def fetch_article_url(scholar_url: str) -> str | None:
     """Fetch a Scholar citation page and return the direct article URL, if any."""
     try:
@@ -118,6 +149,9 @@ def enrich(pubs: list[dict]) -> list[dict]:
 def main():
     print("Fetching profile …")
     page = fetch(SCHOLAR_URL)
+    write_stats(page)
+    if "--stats-only" in sys.argv:
+        return
     pubs = parse_profile(page)
     if not pubs:
         print("ERROR: no publications parsed — Scholar may have blocked the request.", file=sys.stderr)

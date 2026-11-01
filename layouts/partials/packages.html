@@ -1,0 +1,12 @@
+<div class="pkg-list">
+  {{ range hugo.Data.packages }}
+  <div class="pkg-card">
+    <div class="pkg-head">
+      <a href="https://github.com/{{ .repo }}"><strong>{{ .name }}</strong></a>
+      <span class="pkg-stars" title="GitHub stars"><span class="pkg-star">★</span> {{ lang.FormatNumber 0 .stars }}</span>
+    </div>
+    <div><span class="pkg-role pkg-role--{{ .role | urlize }}">{{ .role }}</span></div>
+    <div>{{ .description }}</div>
+  </div>
+  {{ end }}
+</div>

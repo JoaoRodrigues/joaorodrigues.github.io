@@ -1,31 +1,13 @@
-<style>
-.year-pubs {
-  font-size: 0.875rem;
-  line-height: 1.55;
-}
-.pub-entry {
-  display: flex;
-  gap: 0.75rem;
-  margin-bottom: 1.25rem;
-}
-.pub-number {
-  color: #999;
-  min-width: 2rem;
-  text-align: right;
-  flex-shrink: 0;
-}
-.pub-entry strong {
-  font-weight: 500;
-}
-</style>
-
 {{ $pubs := hugo.Data.publications }}
 {{ $total := len $pubs }}
 
-{{/* Collect unique years in the order they appear (already reverse-chrono from Scholar) */}}
+{{/* Years before the cutoff are folded into a single "Older" group */}}
+{{ $cutoff := 2020 }}
+
+{{/* Collect unique groups in the order they appear (already reverse-chrono from Scholar) */}}
 {{ $years := slice }}
 {{ range $pubs }}
-  {{ $y := string .year }}
+  {{ $y := cond (ge (int .year) $cutoff) (string .year) "Older" }}
   {{ if not (in $years $y) }}
     {{ $years = $years | append $y }}
   {{ end }}
@@ -38,7 +20,7 @@
   <summary>{{ $year }}</summary>
   <div class="year-pubs">
     {{ range $pubs }}
-      {{ if eq (string .year) $year }}
+      {{ if eq (cond (ge (int .year) $cutoff) (string .year) "Older") $year }}
       <div class="pub-entry">
         <span class="pub-number">{{ $.Scratch.Get "counter" }}.</span>
         <div>
