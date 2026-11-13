@@ -89,6 +89,15 @@ def parse_profile(page: str) -> list[dict]:
     return publications
 
 
+def assign_periods(pubs: list[dict], span: int = 3) -> None:
+    """Add a "period" label (e.g. "2026-2024") grouping years in brackets of `span` years,
+    counting down from the most recent publication year."""
+    newest = max((p["year"] for p in pubs), default=0)
+    for pub in pubs:
+        start = newest - (newest - pub["year"]) // span * span
+        pub["period"] = f"{start}\u2013{start - span + 1}"
+
+
 def parse_stats(page: str) -> dict:
     """Return total citations and h-index ("All" column) from the profile page."""
     # Table cells come in pairs (All, Since YYYY): citations, h-index, i10-index.
@@ -159,6 +168,7 @@ def main():
     print(f"Parsed {len(pubs)} publications. Fetching article URLs …")
 
     pubs = enrich(pubs)
+    assign_periods(pubs)
 
     found = sum(1 for p in pubs if p["url"])
     print(f"\nArticle URLs found: {found}/{len(pubs)}")

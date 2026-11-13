@@ -1,3 +1,5 @@
 public/
 resources/
 *lock
+*.py[cod]
+__pycache__/
