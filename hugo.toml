@@ -30,6 +30,7 @@ enableEmoji     = true
 enableMissingTranslationPlaceholders = false
 disableRSS     = true
 disableSitemap = false
+disableKinds   = ["taxonomy", "term"]  # single-page site: keep empty taxonomy pages out of the sitemap
 disable404     = false
 disableHugoGeneratorInject = false
 
