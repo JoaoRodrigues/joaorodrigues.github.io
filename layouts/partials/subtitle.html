@@ -1,6 +1,6 @@
 {{- with .Site.Params.occupation }}
     <p>{{.}}</p>
 {{- end }}
-{{- with .Site.Params.currentPosition }}
-    <p>{{.}}</p>
+{{- if and .Site.Params.currentRole .Site.Params.currentEmployer }}
+    <p>{{ partial "current-position.html" . }}</p>
 {{- end }}
