@@ -21,7 +21,8 @@
   "worksFor" (dict "@type" "Organization" "name" $site.Params.currentEmployer)
   "alumniOf" (slice
     (dict "@type" "CollegeOrUniversity" "name" "Universiteit Utrecht")
-    (dict "@type" "CollegeOrUniversity" "name" "Universidade de Coimbra"))
+    (dict "@type" "CollegeOrUniversity" "name" "Universidade de Coimbra")
+    (dict "@type" "CollegeOrUniversity" "name" "Stanford University"))
   "knowsAbout" (split $site.Params.keywords ", ")
   "sameAs" $sameAs -}}
 {{- $profile := dict
