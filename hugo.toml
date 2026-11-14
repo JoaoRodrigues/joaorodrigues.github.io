@@ -57,6 +57,16 @@ disableHugoGeneratorInject = false
   keywords = "computational biology, structural biology, bioinformatics, python, protein, schrodinger"
   images = [""]
   wikidata = "Q63957111"  # used in JSON-LD sameAs
+  knowsAbout = [  # used in JSON-LD knowsAbout
+    "computational biology",
+    "structural biology",
+    "protein science",
+    "bioinformatics",
+    "scientific software",
+    "molecular modeling",
+    "molecular dynamics",
+    "molecular docking",
+  ]
 
   # Home subtitles of the index page.
   #

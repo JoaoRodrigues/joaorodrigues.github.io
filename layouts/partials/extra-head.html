@@ -16,18 +16,20 @@
   "url" .Permalink
   "description" $site.Params.description
   "jobTitle" $site.Params.currentRole
-  "image" (printf "%simages/portrait_500x500.jpg" $site.Home.Permalink)
+  "image" ($site.Params.portrait.path | absURL)
   "email" "me@joaor.eu"
   "worksFor" (dict "@type" "Organization" "name" $site.Params.currentEmployer)
   "alumniOf" (slice
     (dict "@type" "CollegeOrUniversity" "name" "Universiteit Utrecht")
     (dict "@type" "CollegeOrUniversity" "name" "Universidade de Coimbra")
     (dict "@type" "CollegeOrUniversity" "name" "Stanford University"))
-  "knowsAbout" (split $site.Params.keywords ", ")
+  "knowsAbout" $site.Params.knowsAbout
   "sameAs" $sameAs -}}
 {{- $profile := dict
   "@context" "https://schema.org"
   "@type" "ProfilePage"
+  "@id" .Permalink
+  "url" .Permalink
   "mainEntity" $person -}}
 <script type="application/ld+json">{{ $profile | jsonify (dict "indent" "  ") | safeJS }}</script>
 {{- end }}
