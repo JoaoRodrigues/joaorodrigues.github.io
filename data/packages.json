@@ -21,10 +21,24 @@
     "stars": 461
   },
   {
+    "name": "interfacea",
+    "repo": "JoaoRodrigues/interfacea",
+    "role": "Creator",
+    "description": "Open-source library for the analysis of protein interactions.",
+    "stars": 36
+  },
+  {
     "name": "FCC",
     "repo": "haddocking/fcc",
     "role": "Creator",
     "description": "Fraction of Common Contacts clustering algorithm for protein structures.",
     "stars": 28
+  },
+  {
+    "name": "nmaJS",
+    "repo": "joaorodrigues/nmaJS",
+    "role": "Creator",
+    "description": "Normal mode analysis of protein structure implemented in JavaScript.",
+    "stars": 2
   }
 ]
