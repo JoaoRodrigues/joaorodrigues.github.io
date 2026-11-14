@@ -1,3 +1,32 @@
 {{- if .Params.pagecss -}}
 <link rel="stylesheet" type="text/css" href="{{ .Params.pagecss }}">
 {{- end -}}
+
+{{- if .IsHome -}}
+{{- $site := .Site -}}
+{{- $sameAs := slice -}}
+{{- range $site.Params.social -}}
+  {{- if hasPrefix .url "https://" }}{{ $sameAs = $sameAs | append .url }}{{ end -}}
+{{- end -}}
+{{- with $site.Params.wikidata }}{{ $sameAs = $sameAs | append (printf "https://www.wikidata.org/wiki/%s" .) }}{{ end -}}
+{{- $person := dict
+  "@type" "Person"
+  "@id" (printf "%s#me" .Permalink)
+  "name" $site.Params.Author.Name
+  "url" .Permalink
+  "description" $site.Params.description
+  "jobTitle" $site.Params.currentRole
+  "image" (printf "%simages/portrait_500x500.jpg" $site.Home.Permalink)
+  "email" "me@joaor.eu"
+  "worksFor" (dict "@type" "Organization" "name" $site.Params.currentEmployer)
+  "alumniOf" (slice
+    (dict "@type" "CollegeOrUniversity" "name" "Universiteit Utrecht")
+    (dict "@type" "CollegeOrUniversity" "name" "Universidade de Coimbra"))
+  "knowsAbout" (split $site.Params.keywords ", ")
+  "sameAs" $sameAs -}}
+{{- $profile := dict
+  "@context" "https://schema.org"
+  "@type" "ProfilePage"
+  "mainEntity" $person -}}
+<script type="application/ld+json">{{ $profile | jsonify (dict "indent" "  ") | safeJS }}</script>
+{{- end }}

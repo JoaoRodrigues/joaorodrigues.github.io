@@ -56,11 +56,14 @@ disableHugoGeneratorInject = false
   description = "Personal website of João Rodrigues"
   keywords = "computational biology, structural biology, bioinformatics, python, protein, schrodinger"
   images = [""]
+  wikidata = "Q63957111"  # used in JSON-LD sameAs
 
   # Home subtitles of the index page.
   #
   occupation = "Computational Structural Biologist"
-  currentPosition = "Team Lead at Schrodinger"
+  currentRole = "Senior Principal Scientist"
+  currentEmployer = "Schrödinger"
+  # currentPosition ("<role> at <employer>") is composed in partials/current-position.html
 
   # Set a background for the homepage
   # backgroundImage = "assets/images/background.jpg"
@@ -234,6 +237,10 @@ disableHugoGeneratorInject = false
   [[params.social]]
     name = "scholar"
     url  = "https://scholar.google.com/citations?user=UeXRdzQAAAAJ&sortby=pubdate"
+
+  [[params.social]]
+    name = "orcid"
+    url  = "https://orcid.org/0000-0001-9796-3193"
 
   [[params.social]]
     name = "cv"
